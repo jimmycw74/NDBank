@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+    ">
+    
+    <bean id="act1" class="com.ndbank.rest.model.Account">
+        <constructor-arg index="0" value="10"></constructor-arg>
+        <constructor-arg index="1" value="USD"></constructor-arg>
+        <constructor-arg index="2" value="999"></constructor-arg>
+    </bean>
+    
+    <bean id="act2" class="com.ndbank.rest.model.Account">
+        <constructor-arg index="0" value="20"></constructor-arg>
+        <constructor-arg index="1" value="EURO"></constructor-arg>
+        <constructor-arg index="2" value="67000"></constructor-arg>
+    </bean>
+
+    <bean id="act3" class="com.ndbank.rest.model.Account">
+        <constructor-arg index="0" value="30"></constructor-arg>
+        <constructor-arg index="1" value="BRL"></constructor-arg>
+        <constructor-arg index="2" value="0"></constructor-arg>
+    </bean>
+
+    <bean id="act4" class="com.ndbank.rest.model.Account">
+        <constructor-arg index="0" value="40"></constructor-arg>
+        <constructor-arg index="1" value="EURO"></constructor-arg>
+        <constructor-arg index="2" value="1000"></constructor-arg>
+    </bean>
+    
+    
+    
+    <context:annotation-config />
+</beans>
